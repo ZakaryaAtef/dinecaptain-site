@@ -1,116 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="description" content="DineCaptain runs a restaurant or café: POS, tables, kitchen display, menu, recipes, delivery and reports.">
-  <title>DineCaptain: restaurant and café management</title>
-  <style>
-    :root {
-      --bg: #ffffff; --fg: #1b1f27; --muted: #5a6272; --line: #e2e6ed;
-      --accent: #C2410C; --link: #9a3412; --cta-bg: #c2410c; --cta-fg: #ffffff; --soft: #fff7ed;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #10141b; --fg: #e8eaef; --muted: #a3aab8; --line: #283040;
-        --accent: #f97316; --link: #fdba74; --cta-bg: #fdba74; --cta-fg: #2a1205; --soft: #24180f;
-      }
-    }
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body { margin: 0; background: var(--bg); color: var(--fg); border-top: 4px solid var(--accent);
-      font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, Tahoma, "Noto Sans Arabic", "Noto Sans", sans-serif; }
-    main { max-width: 760px; margin: 0 auto; padding: 20px 16px 64px; }
-    a { color: var(--link); overflow-wrap: anywhere; }
-    .top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px;
-      padding-bottom: 12px; border-bottom: 1px solid var(--line); font-size: 15px; }
-    .brand { color: var(--fg); font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
-    .dot { width: 12px; height: 12px; border-radius: 4px; background: var(--accent); display: inline-block; }
-    .links a { margin-inline-end: 4px; }
-    h1 { font-size: 30px; line-height: 1.25; margin: 28px 0 6px; }
-    h2 { font-size: 19px; line-height: 1.35; margin: 32px 0 8px; }
-    h3 { font-size: 16px; margin: 20px 0 4px; }
-    p, ul { margin: 0 0 12px; }
-    ul { padding-inline-start: 22px; }
-    li { margin-bottom: 6px; }
-    .lead { font-size: 19px; color: var(--muted); margin-bottom: 16px; }
-    .meta { color: var(--muted); margin: 0 0 20px; }
-    .card { background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
-    .card p:last-child, .card ul:last-child { margin-bottom: 0; }
-    .cta { display: inline-block; background: var(--cta-bg); color: var(--cta-fg); padding: 10px 18px; border-radius: 10px;
-      text-decoration: none; font-weight: 600; margin: 8px 0 4px; }
-    .cta:hover, .cta:focus-visible { filter: brightness(1.08); }
-    .sub { font-size: 15px; color: var(--muted); }
-    code { font-family: ui-monospace, Consolas, monospace; font-size: 14px; overflow-wrap: anywhere; }
-    section + section { border-top: 1px solid var(--line); margin-top: 48px; }
-    [dir="rtl"] { text-align: right; }
-    [dir="rtl"] code, [dir="rtl"] .ltr { direction: ltr; unicode-bidi: isolate; }
-    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-  </style>
+<meta charset="utf-8">
+<title>DineCaptain has moved to marlysoft.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://marlysoft.com/dinecaptain/">
+<meta name="robots" content="noindex">
+<script>if (location.hash === "#ar") location.replace("https://marlysoft.com/ar/dinecaptain/");</script>
+<meta http-equiv="refresh" content="0; url=https://marlysoft.com/dinecaptain/">
+<style>body{font:16px/1.6 system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;margin:40px 16px;text-align:center;color:#1b1f27}a{color:#1f56dd}@media(prefers-color-scheme:dark){body{background:#0a1020;color:#e8edf7}a{color:#8aaeff}}</style>
 </head>
 <body>
-<main>
-  <div class="top">
-    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>DineCaptain</a>
-    <nav aria-label="Language"><a href="#en">English</a> · <a href="#ar" lang="ar">العربية</a></nav>
-  </div>
-
-  <section id="en" lang="en">
-    <p class="sub links"><a href="index.html">Home</a> · <a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></p>
-    <h1>DineCaptain</h1>
-    <p class="lead">Restaurant and café management: the POS, tables, kitchen, menu, recipes and delivery.</p>
-    <p>DineCaptain runs a restaurant, a café or a quick-service counter from Windows: dine-in, takeaway and delivery orders, the tables and the waiters, the kitchen display, the menu with its sizes, options and meals, recipes and ingredient stock, the call center, reservations and the restaurant's reports. It is made for restaurants and cafés in Egypt and the region, and works in Arabic, English, French, German, Spanish, Italian and Turkish.</p>
-    <p><a class="cta" href="https://apps.microsoft.com/detail/9N96DSK6DMXN">Get it from Microsoft Store</a></p>
-
-    <h2>What it does</h2>
-    <ul>
-      <li>A POS for dine-in, takeaway, pickup and delivery: rounds sent to the kitchen, voids with a manager's PIN, discounts with reasons, the service charge and VAT, pre-bills, split bills, cash, card, wallet and tips.</li>
-      <li>A floor plan and a live table map; move, merge and transfer orders between tables; a captain screen for waiters; reservations and a waitlist.</li>
-      <li>Kitchen stations, a kitchen display with timers, and kitchen tickets to network (ESC/POS) printers through the print agent.</li>
-      <li>A menu with sizes, options, extras, meals, dayparts and price lists, sold-out items, and a QR menu for guests' phones.</li>
-      <li>Recipes that take ingredients out of stock when the bill is paid, purchases, waste, stock counts, food cost and menu engineering.</li>
-      <li>A call center with customers' saved addresses, delivery zones, a delivery board and drivers' cash.</li>
-      <li>Restaurant reports, cashier shifts with X and Z reports, branches, staff permissions, an audit log, and backup and restore.</li>
-      <li>Counter and takeaway sales keep working when the internet drops.</li>
-      <li>Egyptian Tax Authority (ETA) e-receipts, with a practice mode.</li>
-    </ul>
-
-    <h2>How it works</h2>
-    <p>DineCaptain is the Windows app of an online service, so it needs an account and an internet connection. Open the app, choose <b>Create a new restaurant</b> on the sign-in screen, then add your staff in <b>Users &amp; permissions</b>. Every PC, tablet and phone of the restaurant signs in to the same restaurant, so the POS, the kitchen and the office see the same orders, menu and stock. Staff can also use DineCaptain in a web browser at <a href="https://dinecaptain.marlysoft.com">dinecaptain.marlysoft.com</a>. DineCaptain is currently free.</p>
-
-    <h2>Privacy and support</h2>
-    <p>Read the <a href="privacy.html">privacy policy</a> to see what the service stores and how to delete it. For help, see <a href="support.html">Support</a> or write to <a href="mailto:support@marlysoft.com">support@marlysoft.com</a>.</p>
-  </section>
-
-  <section id="ar" lang="ar" dir="rtl">
-    <p class="sub links"><a href="index.html#ar">الرئيسية</a> · <a href="privacy.html#ar">سياسة الخصوصية</a> · <a href="support.html#ar">الدعم</a></p>
-    <h1>داين كابتن <span class="ltr">(DineCaptain)</span></h1>
-    <p class="lead">إدارة المطاعم والكافيهات: نقطة البيع والطاولات والمطبخ والمنيو والمكونات والدليفري.</p>
-    <p>يدير داين كابتن المطعم أو الكافيه أو محل الوجبات السريعة من ويندوز: أوردرات الصالة والتيك أواي والدليفري، والطاولات والكباتن، وشاشة المطبخ، والمنيو بأحجامه واختياراته ووجباته، ومكونات الأصناف ومخزون الخامات، والكول سنتر، والحجوزات، وتقارير المطعم. صُمّم للمطاعم والكافيهات في مصر والمنطقة، ويعمل بالعربية والإنجليزية والفرنسية والألمانية والإسبانية والإيطالية والتركية.</p>
-    <p><a class="cta" href="https://apps.microsoft.com/detail/9N96DSK6DMXN">احصل عليه من Microsoft Store</a></p>
-
-    <h2>ماذا يقدّم</h2>
-    <ul>
-      <li>نقطة بيع للصالة والتيك أواي والاستلام والدليفري: الأوردر يروح المطبخ على دفعات، والإلغاء برقم سري من المدير، والخصومات بأسبابها، والخدمة وضريبة القيمة المضافة، وطباعة الحساب، وتقسيم الفاتورة، والدفع كاش وكارت ومحفظة مع البقشيش.</li>
-      <li>تخطيط للصالة وخريطة حية للطاولات، ونقل ودمج وتحويل الأوردرات بين الطاولات، وشاشة للكابتن، والحجوزات وقائمة الانتظار.</li>
-      <li>أقسام المطبخ، وشاشة المطبخ بعدادات الوقت، وتذاكر المطبخ لطابعات الشبكة (ESC/POS) عن طريق جهاز الطباعة.</li>
-      <li>منيو بالأحجام والاختيارات والإضافات والوجبات، وفترات اليوم وقوائم الأسعار، والأصناف اللي خلصت، ومنيو رقمي QR لموبايلات الضيوف.</li>
-      <li>مكونات تخصم الخامات من المخزون لما الفاتورة تتدفع، والمشتريات والهالك والجرد، وتكلفة الطعام وهندسة المنيو.</li>
-      <li>كول سنتر بعناوين العملاء المحفوظة، ومناطق التوصيل، ولوحة الدليفري، وفلوس الطيارين.</li>
-      <li>تقارير المطعم، وورديات الكاشير بتقريري X وZ، والفروع، وصلاحيات الموظفين، وسجل التعديلات، والنسخ الاحتياطي والاسترجاع.</li>
-      <li>بيع الكاونتر والتيك أواي يكمل لو النت قطع.</li>
-      <li>الإيصال الإلكتروني لمصلحة الضرائب المصرية، مع وضع للتجربة.</li>
-    </ul>
-
-    <h2>كيف يعمل</h2>
-    <p>داين كابتن هو تطبيق ويندوز لخدمة أونلاين، لذلك يحتاج حسابًا واتصالًا بالإنترنت. افتح التطبيق واختر <b>إنشاء مطعم جديد</b> في شاشة الدخول، ثم أضف فريق العمل من <b>صلاحيات المستخدمين</b>. كل كمبيوتر وتابلت وموبايل في المطعم يدخل على المطعم نفسه، فنقطة البيع والمطبخ والإدارة يشوفوا نفس الأوردرات والمنيو والمخزون. ويقدر فريق العمل كمان يستخدم داين كابتن من المتصفح على <a href="https://dinecaptain.marlysoft.com" dir="ltr">dinecaptain.marlysoft.com</a>. داين كابتن مجاني حاليًا.</p>
-
-    <h2>الخصوصية والدعم</h2>
-    <p>اقرأ <a href="privacy.html#ar">سياسة الخصوصية</a> لتعرف ما تحفظه الخدمة وكيف تحذفه. للمساعدة راجع <a href="support.html#ar">صفحة الدعم</a> أو راسلنا على <a href="mailto:support@marlysoft.com">support@marlysoft.com</a>.</p>
-  </section>
-
-  <footer>© 2026 Zakarya Atef · MarlySoft · <a href="mailto:support@marlysoft.com">support@marlysoft.com</a></footer>
-</main>
+<p>DineCaptain has moved to <a href="https://marlysoft.com/dinecaptain/">marlysoft.com/dinecaptain/</a>.</p>
+<p lang="ar" dir="rtl">انتقلت هذه الصفحة إلى <a href="https://marlysoft.com/ar/dinecaptain/">marlysoft.com/ar/dinecaptain/</a>.</p>
 </body>
 </html>
